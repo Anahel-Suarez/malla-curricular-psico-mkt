@@ -21,7 +21,6 @@ function mostrarMalla() {
   const mencionesSeleccionadas = obtenerMencionesSeleccionadas();
   const progreso = JSON.parse(localStorage.getItem("progreso") || "{}");
 
-  // Agrupar cursos por ciclo
   const ciclos = {};
   cursos.forEach(curso => {
     if (!ciclos[curso.ciclo]) ciclos[curso.ciclo] = [];
@@ -38,15 +37,23 @@ function mostrarMalla() {
 
     ciclos[ciclo].forEach(curso => {
       const tipo = curso.condicion?.toLowerCase() || "";
-      const esObligatorio = tipo === "obligatorio";
-      const esElectivo = tipo === "electivo";
       const mencion = (curso.mencion || "").toLowerCase();
 
-      const mostrar =
-        (tipoFiltro === "todos" || tipo === tipoFiltro) &&
-        (esObligatorio || mencionesSeleccionadas.length === 0 || mencionesSeleccionadas.includes(mencion));
+      const esObligatorio = tipo === "obligatorio";
+      const esElectivo = tipo === "electivo";
 
-      if (!mostrar) return;
+      // Filtro por tipo (si aplica)
+      const pasaTipo =
+        tipoFiltro === "todos" ||
+        tipo === tipoFiltro;
+
+      // Filtro por mención (mostrar siempre obligatorios, electivos solo si están en menciones seleccionadas)
+      const pasaMencion =
+        esObligatorio ||
+        mencionesSeleccionadas.length === 0 ||
+        mencionesSeleccionadas.includes(mencion);
+
+      if (!(pasaTipo && pasaMencion)) return;
 
       const div = document.createElement("div");
       div.className = "curso";
@@ -77,7 +84,6 @@ function mostrarMalla() {
 
 function actualizarCursos() {
   const cursosDOM = document.querySelectorAll(".curso");
-
   const completados = Array.from(document.querySelectorAll(".curso.completado"))
                            .map(el => el.dataset.codigo);
 
@@ -91,7 +97,9 @@ function actualizarCursos() {
       curso.classList.add("bloqueado");
     }
 
+    // Aplicar estilos
     const tipo = curso.dataset.tipo;
+
     if (tipo === "electivo") {
       curso.style.backgroundColor = curso.classList.contains("completado")
         ? "#4ea8de"
@@ -127,7 +135,7 @@ function guardarProgreso() {
 
 document.getElementById("reiniciar")?.addEventListener("click", () => {
   localStorage.removeItem("progreso");
-  mostrarMalla(); // reconstruye toda la malla
+  mostrarMalla();
 });
 
 document.getElementById("filtro-tipo")?.addEventListener("change", mostrarMalla);
