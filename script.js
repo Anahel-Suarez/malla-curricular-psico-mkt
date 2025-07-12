@@ -9,26 +9,26 @@ fetch("cursos.json")
 
 function obtenerMencionesSeleccionadas() {
   const select = document.getElementById("filtro-mencion");
-  return Array.from(select.selectedOptions).map(opt => opt.value.toLowerCase());
+  return Array.from(select?.selectedOptions || []).map(opt => opt.value.toLowerCase());
 }
 
 function mostrarMalla() {
   const malla = document.getElementById("malla");
+  if (!malla) return;
   malla.innerHTML = "";
-
-  const estadoGuardado = JSON.parse(localStorage.getItem("progreso")) || {};
 
   const tipoFiltro = document.getElementById("filtro-tipo")?.value || "todos";
   const mencionesSeleccionadas = obtenerMencionesSeleccionadas();
+  const progreso = JSON.parse(localStorage.getItem("progreso") || "{}");
 
-  // Agrupar por ciclo
+  // Agrupar cursos por ciclo
   const ciclos = {};
   cursos.forEach(curso => {
     if (!ciclos[curso.ciclo]) ciclos[curso.ciclo] = [];
     ciclos[curso.ciclo].push(curso);
   });
 
-  Object.keys(ciclos).sort((a, b) => a - b).forEach(ciclo => {
+  Object.keys(ciclos).sort((a, b) => parseInt(a) - parseInt(b)).forEach(ciclo => {
     const columna = document.createElement("div");
     columna.classList.add("ciclo");
 
@@ -37,27 +37,27 @@ function mostrarMalla() {
     columna.appendChild(titulo);
 
     ciclos[ciclo].forEach(curso => {
-      const tipoCurso = curso.condicion.toLowerCase();
-      const esObligatorio = tipoCurso === "obligatorio";
-      const esElectivo = tipoCurso === "electivo";
-      const mencionCurso = (curso.mencion || "").toLowerCase();
+      const tipo = curso.condicion?.toLowerCase() || "";
+      const esObligatorio = tipo === "obligatorio";
+      const esElectivo = tipo === "electivo";
+      const mencion = (curso.mencion || "").toLowerCase();
 
       const mostrar =
-        (tipoFiltro === "todos" || tipoCurso === tipoFiltro) &&
-        (esObligatorio || mencionesSeleccionadas.length === 0 || mencionesSeleccionadas.includes(mencionCurso));
+        (tipoFiltro === "todos" || tipo === tipoFiltro) &&
+        (esObligatorio || mencionesSeleccionadas.length === 0 || mencionesSeleccionadas.includes(mencion));
 
       if (!mostrar) return;
 
       const div = document.createElement("div");
-      div.classList.add("curso");
+      div.className = "curso";
       div.textContent = curso.nombre;
       div.dataset.codigo = curso.codigo;
       div.dataset.requisitos = JSON.stringify(curso.requisitos || []);
-      div.dataset.tipo = tipoCurso;
-      div.dataset.mencion = mencionCurso;
+      div.dataset.tipo = tipo;
+      div.dataset.mencion = mencion;
 
       if (esElectivo) div.classList.add("electivo");
-      if (estadoGuardado[curso.codigo]) div.classList.add("completado");
+      if (progreso[curso.codigo]) div.classList.add("completado");
 
       div.addEventListener("click", () => {
         if (div.classList.contains("bloqueado")) return;
@@ -78,12 +78,12 @@ function mostrarMalla() {
 function actualizarCursos() {
   const cursosDOM = document.querySelectorAll(".curso");
 
-  cursosDOM.forEach(curso => {
-    const requisitos = JSON.parse(curso.dataset.requisitos);
-    const completados = Array.from(document.querySelectorAll(".curso.completado"))
-                             .map(el => el.dataset.codigo);
+  const completados = Array.from(document.querySelectorAll(".curso.completado"))
+                           .map(el => el.dataset.codigo);
 
-    const habilitado = requisitos.length === 0 || requisitos.every(req => completados.includes(req));
+  cursosDOM.forEach(curso => {
+    const requisitos = JSON.parse(curso.dataset.requisitos || "[]");
+    const habilitado = requisitos.length === 0 || requisitos.every(r => completados.includes(r));
 
     curso.classList.remove("bloqueado");
 
@@ -91,7 +91,6 @@ function actualizarCursos() {
       curso.classList.add("bloqueado");
     }
 
-    // Electivo: colores personalizados
     const tipo = curso.dataset.tipo;
     if (tipo === "electivo") {
       curso.style.backgroundColor = curso.classList.contains("completado")
@@ -108,8 +107,7 @@ function actualizarCursos() {
           ? "#FFC8DD"
           : "#FFAFCC";
 
-      curso.style.color = "#000";
-      if (curso.classList.contains("completado")) curso.style.color = "#555";
+      curso.style.color = curso.classList.contains("completado") ? "#555" : "#000";
     }
   });
 
@@ -119,21 +117,18 @@ function actualizarCursos() {
 function guardarProgreso() {
   const cursosDOM = document.querySelectorAll(".curso");
   const progreso = {};
-
   cursosDOM.forEach(curso => {
     if (curso.classList.contains("completado")) {
       progreso[curso.dataset.codigo] = true;
     }
   });
-
   localStorage.setItem("progreso", JSON.stringify(progreso));
 }
 
-document.getElementById("reiniciar").addEventListener("click", () => {
+document.getElementById("reiniciar")?.addEventListener("click", () => {
   localStorage.removeItem("progreso");
-  document.querySelectorAll(".curso").forEach(c => c.classList.remove("completado"));
-  actualizarCursos();
+  mostrarMalla(); // reconstruye toda la malla
 });
 
-document.getElementById("filtro-tipo").addEventListener("change", mostrarMalla);
-document.getElementById("filtro-mencion").addEventListener("change", mostrarMalla);
+document.getElementById("filtro-tipo")?.addEventListener("change", mostrarMalla);
+document.getElementById("filtro-mencion")?.addEventListener("change", mostrarMalla);
