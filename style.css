@@ -59,3 +59,36 @@ h1 {
   pointer-events: none;
   text-decoration: none;
 }
+
+/* ELECTIVOS */
+.curso.electivo {
+  background-color: #74C69D;
+  color: #000;
+}
+
+.curso.electivo.bloqueado {
+  background-color: #D8F3DC;
+}
+
+.curso.electivo.completado {
+  background-color: #4EA8DE;
+  color: white;
+  text-decoration: line-through;
+}
+
+/* FILTROS */
+.filtros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.filtros select,
+.filtros button {
+  padding: 8px 10px;
+  font-size: 0.9em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
