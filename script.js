@@ -27,57 +27,58 @@ function mostrarMalla() {
     ciclos[curso.ciclo].push(curso);
   });
 
-  Object.keys(ciclos).sort((a, b) => parseInt(a) - parseInt(b)).forEach(ciclo => {
-    const columna = document.createElement("div");
-    columna.classList.add("ciclo");
+  Object.keys(ciclos)
+    .sort((a, b) => parseInt(a) - parseInt(b))
+    .forEach(ciclo => {
+      const columna = document.createElement("div");
+      columna.classList.add("ciclo");
 
-    const titulo = document.createElement("h2");
-    titulo.textContent = ciclo;
-    columna.appendChild(titulo);
+      const titulo = document.createElement("h2");
+      titulo.textContent = ciclo;
+      columna.appendChild(titulo);
 
-    ciclos[ciclo].forEach(curso => {
-      const tipo = curso.condicion?.toLowerCase() || "";
-      const mencion = (curso.mencion || "").toLowerCase();
+      ciclos[ciclo].forEach(curso => {
+        const tipo = curso.condicion?.toLowerCase() || "";
+        const mencion = (curso.mencion || "").toLowerCase();
 
-      const esObligatorio = tipo === "obligatorio";
-      const esElectivo = tipo === "electivo";
+        const esObligatorio = tipo === "obligatorio";
+        const esElectivo = tipo === "electivo";
 
-      // Filtro por tipo (si aplica)
-      const pasaTipo =
-        tipoFiltro === "todos" ||
-        tipo === tipoFiltro;
+        const visiblePorTipo =
+          tipoFiltro === "todos" ||
+          (tipoFiltro === "obligatorio" && esObligatorio) ||
+          (tipoFiltro === "electivo" && esElectivo);
 
-      // Filtro por mención (mostrar siempre obligatorios, electivos solo si están en menciones seleccionadas)
-      const pasaMencion =
-        esObligatorio ||
-        mencionesSeleccionadas.length === 0 ||
-        mencionesSeleccionadas.includes(mencion);
+        const visiblePorMencion =
+          esObligatorio ||
+          mencionesSeleccionadas.length === 0 ||
+          (esElectivo && mencionesSeleccionadas.includes(mencion));
 
-      if (!(pasaTipo && pasaMencion)) return;
+        if (!visiblePorTipo || !visiblePorMencion) return;
 
-      const div = document.createElement("div");
-      div.className = "curso";
-      div.textContent = curso.nombre;
-      div.dataset.codigo = curso.codigo;
-      div.dataset.requisitos = JSON.stringify(curso.requisitos || []);
-      div.dataset.tipo = tipo;
-      div.dataset.mencion = mencion;
+        const div = document.createElement("div");
+        div.className = "curso";
+        div.textContent = curso.nombre;
+        div.dataset.codigo = curso.codigo;
+        div.dataset.requisitos = JSON.stringify(curso.requisitos || []);
+        div.dataset.tipo = tipo;
+        div.dataset.mencion = mencion;
 
-      if (esElectivo) div.classList.add("electivo");
-      if (progreso[curso.codigo]) div.classList.add("completado");
+        if (esElectivo) div.classList.add("electivo");
+        if (progreso[curso.codigo]) div.classList.add("completado");
 
-      div.addEventListener("click", () => {
-        if (div.classList.contains("bloqueado")) return;
-        div.classList.toggle("completado");
-        guardarProgreso();
-        actualizarCursos();
+        div.addEventListener("click", () => {
+          if (div.classList.contains("bloqueado")) return;
+          div.classList.toggle("completado");
+          guardarProgreso();
+          actualizarCursos();
+        });
+
+        columna.appendChild(div);
       });
 
-      columna.appendChild(div);
+      malla.appendChild(columna);
     });
-
-    malla.appendChild(columna);
-  });
 
   actualizarCursos();
 }
@@ -97,9 +98,7 @@ function actualizarCursos() {
       curso.classList.add("bloqueado");
     }
 
-    // Aplicar estilos
     const tipo = curso.dataset.tipo;
-
     if (tipo === "electivo") {
       curso.style.backgroundColor = curso.classList.contains("completado")
         ? "#4ea8de"
