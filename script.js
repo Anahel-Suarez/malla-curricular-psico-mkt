@@ -35,6 +35,14 @@ function mostrarMalla() {
       div.textContent = curso.nombre;
       div.dataset.codigo = curso.codigo;
       div.dataset.requisitos = JSON.stringify(curso.requisitos || []);
+
+      // Añadir el clic directamente aquí
+      div.addEventListener("click", () => {
+        if (div.classList.contains("bloqueado")) return;
+        div.classList.toggle("completado");
+        actualizarCursos();
+      });
+
       col.appendChild(div);
     });
 
@@ -49,25 +57,15 @@ function actualizarCursos() {
 
   cursosDOM.forEach(curso => {
     const requisitos = JSON.parse(curso.dataset.requisitos);
-    const completados = document.querySelectorAll(".curso.completado");
-    const codigosCompletados = Array.from(completados).map(el => el.dataset.codigo);
+    const completados = Array.from(document.querySelectorAll(".curso.completado"))
+                             .map(el => el.dataset.codigo);
 
-    const habilitado = requisitos.length === 0 || requisitos.every(req => codigosCompletados.includes(req));
+    const habilitado = requisitos.length === 0 || requisitos.every(req => completados.includes(req));
 
-    curso.classList.remove("completado", "bloqueado");
+    curso.classList.remove("bloqueado");
 
-    if (!habilitado) {
+    if (!habilitado && !curso.classList.contains("completado")) {
       curso.classList.add("bloqueado");
     }
-  });
-
-  // Añadir interacciones
-  cursosDOM.forEach(curso => {
-    curso.onclick = () => {
-      if (curso.classList.contains("bloqueado")) return;
-
-      curso.classList.toggle("completado");
-      actualizarCursos();
-    };
   });
 }
