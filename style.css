@@ -1,0 +1,36 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  background-color: #f7f7f7;
+}
+
+h1 {
+  text-align: center;
+}
+
+#malla {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 15px;
+}
+
+.curso {
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s;
+}
+
+.curso.completado {
+  background-color: #4caf50;
+  color: white;
+}
+
+.curso.bloqueado {
+  background-color: #bbb;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
