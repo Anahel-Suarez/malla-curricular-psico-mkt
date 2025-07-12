@@ -211,7 +211,7 @@
     "nombre": "NEUROPSICOLOGÍA",
     "ciclo": 4,
     "requisitos": [
-      "NEUROCIENCIAS"
+      "NEUROCIENCIAS_(BASES_NEUROBIOLÓGICAS_DE_LA_CONDUCTA)"
     ]
   },
   {
@@ -324,8 +324,7 @@
     "nombre": "ÉTICA Y CIUDADANÍA",
     "ciclo": 5,
     "requisitos": [
-      "SOCIEDAD",
-      "ESTADO_Y_EMPRESA"
+      "SOCIEDAD,_ESTADO_Y_EMPRESA"
     ]
   },
   {
