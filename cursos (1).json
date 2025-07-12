@@ -1,0 +1,1025 @@
+[
+  {
+    "codigo": "AMERICAN_LITERATURE",
+    "nombre": "AMERICAN LITERATURE",
+    "ciclo": 1,
+    "requisitos": [],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "DESARROLLO_HUMANO",
+    "nombre": "DESARROLLO HUMANO",
+    "ciclo": 1,
+    "requisitos": [],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "ENGLISH_I",
+    "nombre": "ENGLISH I",
+    "ciclo": 1,
+    "requisitos": [
+      "NIVELACIÓN_EN_INGLÉS"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "FUNDAMENTOS_DE_MATEMÁTICA",
+    "nombre": "FUNDAMENTOS DE MATEMÁTICA",
+    "ciclo": 1,
+    "requisitos": [
+      "NIVELACIÓN_EN_MATEMÁTICA_B"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "HISTORIA_Y_SISTEMAS_DE_LA_PSICOLOGÍA",
+    "nombre": "HISTORIA Y SISTEMAS DE LA PSICOLOGÍA",
+    "ciclo": 1,
+    "requisitos": [],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "LENGUAJE_I",
+    "nombre": "LENGUAJE I",
+    "ciclo": 1,
+    "requisitos": [
+      "NIVELACIÓN_EN_LENGUAJE"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "NIVELACIÓN_EN_INGLÉS",
+    "nombre": "NIVELACIÓN EN INGLÉS",
+    "ciclo": 1,
+    "requisitos": [],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "NIVELACIÓN_EN_LENGUAJE",
+    "nombre": "NIVELACIÓN EN LENGUAJE",
+    "ciclo": 1,
+    "requisitos": [],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "NIVELACIÓN_EN_MATEMÁTICA_B",
+    "nombre": "NIVELACIÓN EN MATEMÁTICA B",
+    "ciclo": 1,
+    "requisitos": [],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "PSICOLOGÍA_GENERAL",
+    "nombre": "PSICOLOGÍA GENERAL",
+    "ciclo": 1,
+    "requisitos": [],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "WORLD_HISTORY",
+    "nombre": "WORLD HISTORY",
+    "ciclo": 1,
+    "requisitos": [],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "ADMINISTRACIÓN_PARA_LOS_NEGOCIOS",
+    "nombre": "ADMINISTRACIÓN PARA LOS NEGOCIOS",
+    "ciclo": 2,
+    "requisitos": [],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "BIOLOGÍA",
+    "nombre": "BIOLOGÍA",
+    "ciclo": 2,
+    "requisitos": [],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "ENGLISH_II",
+    "nombre": "ENGLISH II",
+    "ciclo": 2,
+    "requisitos": [
+      "ENGLISH_I"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "ENVIRONMENTAL_SCIENCES",
+    "nombre": "ENVIRONMENTAL SCIENCES",
+    "ciclo": 2,
+    "requisitos": [],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "ESTADÍSTICA_GENERAL",
+    "nombre": "ESTADÍSTICA GENERAL",
+    "ciclo": 2,
+    "requisitos": [
+      "FUNDAMENTOS_DE_MATEMÁTICA"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "FUNDAMENTOS_EPISTEMOLÓGICOS_DE_LA_PSICOLOGÍA",
+    "nombre": "FUNDAMENTOS EPISTEMOLÓGICOS DE LA PSICOLOGÍA",
+    "ciclo": 2,
+    "requisitos": [
+      "HISTORIA_Y_SISTEMAS_DE_LA_PSICOLOGÍA"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "LENGUAJE_II",
+    "nombre": "LENGUAJE II",
+    "ciclo": 2,
+    "requisitos": [
+      "LENGUAJE_I"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "PSICOLOGÍA_DEL_DESARROLLO",
+    "nombre": "PSICOLOGÍA DEL DESARROLLO",
+    "ciclo": 2,
+    "requisitos": [
+      "PSICOLOGÍA_GENERAL"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "CONTABILIDAD_GENERAL",
+    "nombre": "CONTABILIDAD GENERAL",
+    "ciclo": 3,
+    "requisitos": [
+      "FUNDAMENTOS_DE_MATEMÁTICA"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "ENGLISH_III",
+    "nombre": "ENGLISH III",
+    "ciclo": 3,
+    "requisitos": [
+      "ENGLISH_II"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "MARKETING",
+    "nombre": "MARKETING",
+    "ciclo": 3,
+    "requisitos": [],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "METODOLOGÍA_DE_LA_INVESTIGACIÓN",
+    "nombre": "METODOLOGÍA DE LA INVESTIGACIÓN",
+    "ciclo": 3,
+    "requisitos": [
+      "ESTADÍSTICA_GENERAL"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "MÉTODOS_ESTADÍSTICOS_EN_PSICOLOGÍA",
+    "nombre": "MÉTODOS ESTADÍSTICOS EN PSICOLOGÍA",
+    "ciclo": 3,
+    "requisitos": [
+      "ESTADÍSTICA_GENERAL"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "NEUROCIENCIAS_(BASES_NEUROBIOLÓGICAS_DE_LA_CONDUCTA)",
+    "nombre": "NEUROCIENCIAS (BASES NEUROBIOLÓGICAS DE LA CONDUCTA)",
+    "ciclo": 3,
+    "requisitos": [
+      "PSICOLOGÍA_GENERAL",
+      "BIOLOGÍA"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "PROCESOS_AFECTIVOS_Y_MOTIVACIONALES",
+    "nombre": "PROCESOS AFECTIVOS Y MOTIVACIONALES",
+    "ciclo": 3,
+    "requisitos": [
+      "PSICOLOGÍA_DEL_DESARROLLO"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "REALIDAD_NACIONAL_Y_GLOBALIZACIÓN",
+    "nombre": "REALIDAD NACIONAL Y GLOBALIZACIÓN",
+    "ciclo": 3,
+    "requisitos": [],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "CONTABILIDAD_AVANZADA",
+    "nombre": "CONTABILIDAD AVANZADA",
+    "ciclo": 4,
+    "requisitos": [
+      "CONTABILIDAD_GENERAL"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "ENGLISH_IV",
+    "nombre": "ENGLISH IV",
+    "ciclo": 4,
+    "requisitos": [
+      "ENGLISH_III"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "NEUROPSICOLOGÍA",
+    "nombre": "NEUROPSICOLOGÍA",
+    "ciclo": 4,
+    "requisitos": [
+      "NEUROCIENCIAS"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "PROCESOS_COGNITIVOS_I",
+    "nombre": "PROCESOS COGNITIVOS I",
+    "ciclo": 4,
+    "requisitos": [
+      "PSICOLOGÍA_DEL_DESARROLLO"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "PSICOLOGÍA_SOCIAL",
+    "nombre": "PSICOLOGÍA SOCIAL",
+    "ciclo": 4,
+    "requisitos": [
+      "PSICOLOGÍA_GENERAL"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "PSICOMETRÍA",
+    "nombre": "PSICOMETRÍA",
+    "ciclo": 4,
+    "requisitos": [
+      "MÉTODOS_ESTADÍSTICOS_EN_PSICOLOGÍA"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "SOCIEDAD,_ESTADO_Y_EMPRESA",
+    "nombre": "SOCIEDAD, ESTADO Y EMPRESA",
+    "ciclo": 4,
+    "requisitos": [
+      "REALIDAD_NACIONAL_Y_GLOBALIZACIÓN"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "TÉCNICAS_DE_ENTREVISTA_Y_OBSERVACIÓN",
+    "nombre": "TÉCNICAS DE ENTREVISTA Y OBSERVACIÓN",
+    "ciclo": 4,
+    "requisitos": [
+      "PSICOLOGÍA_DEL_DESARROLLO"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "ADVERTISING",
+    "nombre": "ADVERTISING",
+    "ciclo": 5,
+    "requisitos": [
+      "MARKETING"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "ENGLISH_V",
+    "nombre": "ENGLISH V",
+    "ciclo": 5,
+    "requisitos": [
+      "ENGLISH_IV"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "INSTRUMENTOS_PSICOMÉTRICOS",
+    "nombre": "INSTRUMENTOS PSICOMÉTRICOS",
+    "ciclo": 5,
+    "requisitos": [
+      "PSICOMETRÍA"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "INVESTIGACIÓN_Y_ANÁLISIS_DE_MERCADO",
+    "nombre": "INVESTIGACIÓN Y ANÁLISIS DE MERCADO",
+    "ciclo": 5,
+    "requisitos": [
+      "MARKETING",
+      "ESTADÍSTICA_GENERAL"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "PROCESOS_COGNITIVOS_II",
+    "nombre": "PROCESOS COGNITIVOS II",
+    "ciclo": 5,
+    "requisitos": [
+      "PROCESOS_COGNITIVOS_I"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "PSICOLOGÍA_DE_LA_PERSONALIDAD",
+    "nombre": "PSICOLOGÍA DE LA PERSONALIDAD",
+    "ciclo": 5,
+    "requisitos": [
+      "PROCESOS_AFECTIVOS_Y_MOTIVACIONALES"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "PSICOLOGÍA_DEL_APRENDIZAJE",
+    "nombre": "PSICOLOGÍA DEL APRENDIZAJE",
+    "ciclo": 5,
+    "requisitos": [
+      "PSICOLOGÍA_DEL_DESARROLLO"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "PSICOPATOLOGÍA",
+    "nombre": "PSICOPATOLOGÍA",
+    "ciclo": 5,
+    "requisitos": [
+      "PROCESOS_AFECTIVOS_Y_MOTIVACIONALES"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "ÉTICA_Y_CIUDADANÍA",
+    "nombre": "ÉTICA Y CIUDADANÍA",
+    "ciclo": 5,
+    "requisitos": [
+      "SOCIEDAD",
+      "ESTADO_Y_EMPRESA"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "BRAND_MANAGEMENT",
+    "nombre": "BRAND MANAGEMENT",
+    "ciclo": 6,
+    "requisitos": [
+      "MARKETING"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "DIAGNÓSTICO_PSICOLÓGICO",
+    "nombre": "DIAGNÓSTICO PSICOLÓGICO",
+    "ciclo": 6,
+    "requisitos": [
+      "TÉCNICAS_DE_ENTREVISTA_Y_OBSERVACIÓN",
+      "PSICOPATOLOGÍA"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "ENGLISH_VI:_RREL",
+    "nombre": "ENGLISH VI: RREL",
+    "ciclo": 6,
+    "requisitos": [
+      "ENGLISH_V"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "GESTIÓN_DE_EMPRESAS",
+    "nombre": "GESTIÓN DE EMPRESAS",
+    "ciclo": 6,
+    "requisitos": [
+      "ADMINISTRACIÓN_PARA_LOS_NEGOCIOS"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "INSTRUMENTOS_PROYECTIVOS_(INSTRUMENTOS_DE_EVALUACIÓN_PROYECTIVA)",
+    "nombre": "INSTRUMENTOS PROYECTIVOS (INSTRUMENTOS DE EVALUACIÓN PROYECTIVA)",
+    "ciclo": 6,
+    "requisitos": [
+      "PSICOLOGÍA_DE_LA_PERSONALIDAD"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "PSICOLOGÍA_CLÍNICA_Y_DE_LA_SALUD",
+    "nombre": "PSICOLOGÍA CLÍNICA Y DE LA SALUD",
+    "ciclo": 6,
+    "requisitos": [
+      "PSICOPATOLOGÍA"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "PSICOLOGÍA_COMUNITARIA",
+    "nombre": "PSICOLOGÍA COMUNITARIA",
+    "ciclo": 6,
+    "requisitos": [
+      "PSICOLOGÍA_SOCIAL"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "PSICOLOGÍA_EDUCATIVA",
+    "nombre": "PSICOLOGÍA EDUCATIVA",
+    "ciclo": 6,
+    "requisitos": [
+      "PSICOLOGÍA_DEL_APRENDIZAJE"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "PSICOLOGÍA_EMPRESARIAL",
+    "nombre": "PSICOLOGÍA EMPRESARIAL",
+    "ciclo": 6,
+    "requisitos": [
+      "PSICOLOGÍA_SOCIAL"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "BASES_FISIOLÓGICAS_I",
+    "nombre": "BASES FISIOLÓGICAS I",
+    "ciclo": 7,
+    "requisitos": [],
+    "condicion": "elect.",
+    "mencion": "psc y nutrición"
+  },
+  {
+    "codigo": "BIENESTAR_PSICOLÓGICO",
+    "nombre": "BIENESTAR PSICOLÓGICO",
+    "ciclo": 7,
+    "requisitos": [
+      "PSICOLOGÍA_CLÍNICA_Y_DE_LA_SALUD"
+    ],
+    "condicion": "elect.",
+    "mencion": "psc-clini-salud"
+  },
+  {
+    "codigo": "CANALES_Y_DISTRIBUCIÓN_EN_MARKETING",
+    "nombre": "CANALES Y DISTRIBUCIÓN EN MARKETING",
+    "ciclo": 7,
+    "requisitos": [
+      "MARKETING"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "COMPORTAMIENTO_SEXUAL",
+    "nombre": "COMPORTAMIENTO SEXUAL",
+    "ciclo": 7,
+    "requisitos": [
+      "PSICOLOGÍA_DE_LA_PERSONALIDAD"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "ENGLISH_COMPOSITION_I",
+    "nombre": "ENGLISH COMPOSITION I",
+    "ciclo": 7,
+    "requisitos": [
+      "ENGLISH_V"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "GESTIÓN_DE_PERSONAS",
+    "nombre": "GESTIÓN DE PERSONAS",
+    "ciclo": 7,
+    "requisitos": [
+      "PSICOLOGÍA_EMPRESARIAL"
+    ],
+    "condicion": "elect.",
+    "mencion": "psc: empresaria"
+  },
+  {
+    "codigo": "INTRODUCTION_TO_AMERICAN_LITERATURE",
+    "nombre": "INTRODUCTION TO AMERICAN LITERATURE",
+    "ciclo": 7,
+    "requisitos": [
+      "ENGLISH_VI:_RREL"
+    ],
+    "condicion": "elect.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "INVESTIGACIÓN_PSICOLÓGICA_I",
+    "nombre": "INVESTIGACIÓN PSICOLÓGICA I",
+    "ciclo": 7,
+    "requisitos": [
+      "PSICOMETRÍA"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "MARKETING_Y_OPERACIONES_DE_SERVICIOS",
+    "nombre": "MARKETING Y OPERACIONES DE SERVICIOS",
+    "ciclo": 7,
+    "requisitos": [
+      "MARKETING"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "PRINCIPIOS_DE_ECONOMÍA",
+    "nombre": "PRINCIPIOS DE ECONOMÍA",
+    "ciclo": 7,
+    "requisitos": [],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "PROGRAMAS_DE_INTERVENCIÓN_PSICOLÓGICA",
+    "nombre": "PROGRAMAS DE INTERVENCIÓN PSICOLÓGICA",
+    "ciclo": 7,
+    "requisitos": [
+      "DIAGNÓSTICO_PSICOLÓGICO"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "PSICOLOGÍA_DE_LA_COMUNICACIÓN",
+    "nombre": "PSICOLOGÍA DE LA COMUNICACIÓN",
+    "ciclo": 7,
+    "requisitos": [
+      "PROCESOS_COGNITIVOS_II"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "PSICOLOGÍA_INSTRUCCIONAL",
+    "nombre": "PSICOLOGÍA INSTRUCCIONAL",
+    "ciclo": 7,
+    "requisitos": [
+      "PSICOLOGÍA_EDUCATIVA"
+    ],
+    "condicion": "elect.",
+    "mencion": "psc-educativa"
+  },
+  {
+    "codigo": "PSICOLOGÍA_INTERCULTURAL",
+    "nombre": "PSICOLOGÍA INTERCULTURAL",
+    "ciclo": 7,
+    "requisitos": [
+      "PSICOLOGÍA_COMUNITARIA"
+    ],
+    "condicion": "elect.",
+    "mencion": "psc-comunitaria"
+  },
+  {
+    "codigo": "BASES_FISIOLÓGICAS_II",
+    "nombre": "BASES FISIOLÓGICAS II",
+    "ciclo": 8,
+    "requisitos": [
+      "BASES_FISIOLÓGICAS_I"
+    ],
+    "condicion": "elect.",
+    "mencion": "psc y nutrición"
+  },
+  {
+    "codigo": "DESARROLLO_COMUNITARIO",
+    "nombre": "DESARROLLO COMUNITARIO",
+    "ciclo": 8,
+    "requisitos": [
+      "PSICOLOGÍA_COMUNITARIA"
+    ],
+    "condicion": "elect.",
+    "mencion": "psc-comunitaria"
+  },
+  {
+    "codigo": "E-MARKETING_FOR_BUSINESS",
+    "nombre": "E-MARKETING FOR BUSINESS",
+    "ciclo": 8,
+    "requisitos": [
+      "MARKETING"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "ENFOQUES_PSICOTERAPÉUTICOS",
+    "nombre": "ENFOQUES PSICOTERAPÉUTICOS",
+    "ciclo": 8,
+    "requisitos": [
+      "PSICOLOGÍA_CLÍNICA_Y_DE_LA_SALUD"
+    ],
+    "condicion": "elect.",
+    "mencion": "psc-clini-salud"
+  },
+  {
+    "codigo": "ESTRATEGIAS_DE_SELECCIÓN_DE_PERSONAL",
+    "nombre": "ESTRATEGIAS DE SELECCIÓN DE PERSONAL",
+    "ciclo": 8,
+    "requisitos": [
+      "GESTIÓN_DE_PERSONAS"
+    ],
+    "condicion": "elect.",
+    "mencion": "psc: empresaria"
+  },
+  {
+    "codigo": "EVALUACIÓN_PSICOEDUCATIVA",
+    "nombre": "EVALUACIÓN PSICOEDUCATIVA",
+    "ciclo": 8,
+    "requisitos": [
+      "PSICOLOGÍA_INSTRUCCIONAL"
+    ],
+    "condicion": "elect.",
+    "mencion": "psc-educativa"
+  },
+  {
+    "codigo": "FUNDAMENTOS_DE_LAS_FINANZAS",
+    "nombre": "FUNDAMENTOS DE LAS FINANZAS",
+    "ciclo": 8,
+    "requisitos": [
+      "PRINCIPIOS_DE_ECONOMÍA"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "INVESTIGACIÓN_PSICOLÓGICA_II",
+    "nombre": "INVESTIGACIÓN PSICOLÓGICA II",
+    "ciclo": 8,
+    "requisitos": [
+      "INVESTIGACIÓN_PSICOLÓGICA_I"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "MICROECONOMÍA",
+    "nombre": "MICROECONOMÍA",
+    "ciclo": 8,
+    "requisitos": [
+      "PRINCIPIOS_DE_ECONOMÍA"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "PSICOLOGÍA_DE_LA_SALUD_OCUPACIONAL",
+    "nombre": "PSICOLOGÍA DE LA SALUD OCUPACIONAL",
+    "ciclo": 8,
+    "requisitos": [
+      "PSICOLOGÍA_CLÍNICA_Y_DE_LA_SALUD",
+      "PSICOLOGÍA_EMPRESARIAL"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "PUBLIC_SPEAKING",
+    "nombre": "PUBLIC SPEAKING",
+    "ciclo": 8,
+    "requisitos": [
+      "ENGLISH_VI:_RREL"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "RESOLUCIÓN_DE_CONFLICTOS_Y_NEGOCIACIONES",
+    "nombre": "RESOLUCIÓN DE CONFLICTOS Y NEGOCIACIONES",
+    "ciclo": 8,
+    "requisitos": [
+      "PSICOLOGÍA_COMUNITARIA"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "TÉCNICAS_DE_MANEJO_GRUPAL",
+    "nombre": "TÉCNICAS DE MANEJO GRUPAL",
+    "ciclo": 8,
+    "requisitos": [
+      "PSICOLOGÍA_DE_LA_COMUNICACIÓN"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "ALIMENTACIÓN_Y_NUTRICIÓN",
+    "nombre": "ALIMENTACIÓN Y NUTRICIÓN",
+    "ciclo": 9,
+    "requisitos": [
+      "BASES_FISIOLÓGICAS_II"
+    ],
+    "condicion": "elect.",
+    "mencion": "psc y nutrición"
+  },
+  {
+    "codigo": "CAPACITACIÓN_Y_DESARROLLO_HUMANO",
+    "nombre": "CAPACITACIÓN Y DESARROLLO HUMANO",
+    "ciclo": 9,
+    "requisitos": [
+      "GESTIÓN_DE_PERSONAS"
+    ],
+    "condicion": "elect.",
+    "mencion": "psc: empresaria"
+  },
+  {
+    "codigo": "ENGLISH_COMPOSITION_II",
+    "nombre": "ENGLISH COMPOSITION II",
+    "ciclo": 9,
+    "requisitos": [
+      "ENGLISH_COMPOSITION_I"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "GESTIÓN_DE_PROYECTOS_SOCIALES",
+    "nombre": "GESTIÓN DE PROYECTOS SOCIALES",
+    "ciclo": 9,
+    "requisitos": [
+      "DESARROLLO_COMUNITARIO"
+    ],
+    "condicion": "elect.",
+    "mencion": "psc-comunitaria"
+  },
+  {
+    "codigo": "INTERNADO_I",
+    "nombre": "INTERNADO I",
+    "ciclo": 9,
+    "requisitos": [
+      "PROGRAMAS_DE_INTERVENCIÓN_PSICOLÓGICA",
+      "INVESTIGACIÓN_PSICOLÓGICA_II"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "INTERVENCIÓN_PSICOEDUCATIVA",
+    "nombre": "INTERVENCIÓN PSICOEDUCATIVA",
+    "ciclo": 9,
+    "requisitos": [
+      "EVALUACIÓN_PSICOEDUCATIVA"
+    ],
+    "condicion": "elect.",
+    "mencion": "psc-educativa"
+  },
+  {
+    "codigo": "MARKETING_INDUSTRIAL_Y_B2B",
+    "nombre": "MARKETING INDUSTRIAL Y B2B",
+    "ciclo": 9,
+    "requisitos": [
+      "MARKETING"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "POLÍTICA_DE_PRECIOS_Y_RENTABILIDAD",
+    "nombre": "POLÍTICA DE PRECIOS Y RENTABILIDAD",
+    "ciclo": 9,
+    "requisitos": [
+      "MARKETING"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "PSICOTERAPIA_COGNITIVO_CONDUCTUAL",
+    "nombre": "PSICOTERAPIA COGNITIVO CONDUCTUAL",
+    "ciclo": 9,
+    "requisitos": [
+      "ENFOQUES_PSICOTERAPÉUTICOS"
+    ],
+    "condicion": "elect.",
+    "mencion": "psc-clini-salud"
+  },
+  {
+    "codigo": "SEMINARIO_DE_TESIS_I",
+    "nombre": "SEMINARIO DE TESIS I",
+    "ciclo": 9,
+    "requisitos": [
+      "INVESTIGACIÓN_PSICOLÓGICA_II"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "BUSINESS_AND_CONSUMER_SALES_MANAGEMENT",
+    "nombre": "BUSINESS AND CONSUMER SALES MANAGEMENT",
+    "ciclo": 10,
+    "requisitos": [
+      "MARKETING"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "COMPORTAMIENTO_DEL_CONSUMIDOR",
+    "nombre": "COMPORTAMIENTO DEL CONSUMIDOR",
+    "ciclo": 10,
+    "requisitos": [
+      "PSICOLOGÍA_EMPRESARIAL",
+      "PSICOLOGÍA_DE_LA_COMUNICACIÓN"
+    ],
+    "condicion": "elect.",
+    "mencion": "psc: empresaria"
+  },
+  {
+    "codigo": "COMUNICACIONES_INTEGRADAS_DE_MARKETING",
+    "nombre": "COMUNICACIONES INTEGRADAS DE MARKETING",
+    "ciclo": 10,
+    "requisitos": [
+      "MARKETING"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "FRANCÉS_I",
+    "nombre": "FRANCÉS I",
+    "ciclo": 10,
+    "requisitos": [],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "INTERNADO_II",
+    "nombre": "INTERNADO II",
+    "ciclo": 10,
+    "requisitos": [
+      "INTERNADO_I"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "PSICOLOGÍA_AMBIENTAL",
+    "nombre": "PSICOLOGÍA AMBIENTAL",
+    "ciclo": 10,
+    "requisitos": [
+      "PSICOLOGÍA_COMUNITARIA"
+    ],
+    "condicion": "elect.",
+    "mencion": "psc-comunitaria"
+  },
+  {
+    "codigo": "PSICOLOGÍA_DE_LA_ALIMENTACIÓN",
+    "nombre": "PSICOLOGÍA DE LA ALIMENTACIÓN",
+    "ciclo": 10,
+    "requisitos": [
+      "ALIMENTACIÓN_Y_NUTRICIÓN"
+    ],
+    "condicion": "elect.",
+    "mencion": "psc y nutrición"
+  },
+  {
+    "codigo": "PSICOLOGÍA_DE_LA_INCLUSIÓN_EDUCATIVA",
+    "nombre": "PSICOLOGÍA DE LA INCLUSIÓN EDUCATIVA",
+    "ciclo": 10,
+    "requisitos": [
+      "EVALUACIÓN_PSICOEDUCATIVA"
+    ],
+    "condicion": "elect.",
+    "mencion": "psc-educativa"
+  },
+  {
+    "codigo": "PSICOLOGÍA_FORENSE",
+    "nombre": "PSICOLOGÍA FORENSE",
+    "ciclo": 10,
+    "requisitos": [
+      "ENFOQUES_PSICOTERAPÉUTICOS"
+    ],
+    "condicion": "elect.",
+    "mencion": "psc-clini-salud"
+  },
+  {
+    "codigo": "SEMINARIO_DE_TESIS_II",
+    "nombre": "SEMINARIO DE TESIS II",
+    "ciclo": 10,
+    "requisitos": [
+      "SEMINARIO_DE_TESIS_I"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "GERENCIA_DE_MARKETING",
+    "nombre": "GERENCIA DE MARKETING",
+    "ciclo": 11,
+    "requisitos": [
+      "MARKETING"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "GLOBAL_BUSINESS_STRATEGY",
+    "nombre": "GLOBAL BUSINESS STRATEGY",
+    "ciclo": 11,
+    "requisitos": [
+      "GESTIÓN_DE_EMPRESAS"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "LIDERAZGO_ORGANIZACIONAL",
+    "nombre": "LIDERAZGO ORGANIZACIONAL",
+    "ciclo": 11,
+    "requisitos": [
+      "GESTIÓN_DE_EMPRESAS"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "MARKETING_CAPSTONE",
+    "nombre": "MARKETING CAPSTONE",
+    "ciclo": 11,
+    "requisitos": [],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  },
+  {
+    "codigo": "MARKETING_GLOBAL",
+    "nombre": "MARKETING GLOBAL",
+    "ciclo": 11,
+    "requisitos": [
+      "MARKETING"
+    ],
+    "condicion": "oblig.",
+    "mencion": "todas"
+  }
+]
