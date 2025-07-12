@@ -1,94 +1,97 @@
 body {
-  font-family: sans-serif;
-  padding: 20px;
   background-color: #ffffff;
-  color: #333;
+  font-family: Arial, sans-serif;
+  margin: 20px;
 }
 
 h1 {
   text-align: center;
-  margin-bottom: 30px;
+  color: #333;
 }
 
-.grid {
-  display: flex;
-  gap: 20px;
-  overflow-x: auto;
-}
-
-.ciclo {
-  min-width: 180px;
-}
-
-.ciclo h2 {
-  text-align: center;
-  font-size: 1.2em;
-  margin-bottom: 10px;
-  background-color: #A2D2FF;
-  padding: 5px 0;
-  border-radius: 5px;
-  color: #000;
-}
-
-/* CURSOS ACTIVOS */
-.curso {
-  background-color: #FFAFCF;
-  padding: 10px;
-  border-radius: 8px;
-  margin-bottom: 10px;
-  text-align: center;
-  cursor: pointer;
-  transition: background-color 0.2s, color 0.2s, text-decoration 0.2s;
-  font-size: 0.9em;
-  font-weight: bold;
-  color: #000;
-}
-
-/* CURSOS COMPLETADOS */
-.curso.completado {
-  background-color: #CDB4DB;
-  color: #555;
-  text-decoration: line-through;
-}
-
-/* CURSOS BLOQUEADOS */
-.curso.bloqueado {
-  background-color: #FFC8DD;
-  cursor: not-allowed;
-  opacity: 0.5;
-  pointer-events: none;
-  text-decoration: none;
-}
-
-/* ELECTIVOS */
-.curso.electivo {
-  background-color: #74C69D;
-  color: #000;
-}
-
-.curso.electivo.bloqueado {
-  background-color: #D8F3DC;
-}
-
-.curso.electivo.completado {
-  background-color: #4EA8DE;
-  color: white;
-  text-decoration: line-through;
-}
-
-/* FILTROS */
 .filtros {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
+  gap: 1rem;
   margin-bottom: 20px;
+}
+
+.filtros label {
+  font-weight: bold;
 }
 
 .filtros select,
 .filtros button {
-  padding: 8px 10px;
-  font-size: 0.9em;
+  padding: 0.5rem;
+  font-size: 1rem;
   border-radius: 5px;
   border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  max-width: fit-content;
+}
+
+.grid {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.ciclo {
+  min-width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: #f0f0f0;
+}
+
+.ciclo h2 {
+  background-color: #A2D2FF;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.curso {
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #FFC8DD; /* bloqueado por defecto */
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.curso:hover {
+  transform: scale(1.03);
+}
+
+.curso.completado {
+  background-color: #CDB4DB;
+  text-decoration: line-through;
+  color: #555;
+}
+
+.curso:not(.bloqueado):not(.completado) {
+  background-color: #FFAFCC; /* activo */
+}
+
+.curso.bloqueado {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.curso.electivo.bloqueado {
+  background-color: #d8f3dc !important;
+}
+
+.curso.electivo:not(.bloqueado):not(.completado) {
+  background-color: #74c69d !important;
+}
+
+.curso.electivo.completado {
+  background-color: #4ea8de !important;
+  color: white;
 }
