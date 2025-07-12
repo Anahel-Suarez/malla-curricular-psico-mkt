@@ -28,7 +28,9 @@ h1 {
   border-radius: 5px;
   border: 1px solid #ccc;
   background-color: #f9f9f9;
-  max-width: fit-content;
+  width: auto;
+  min-width: 150px;
+  max-width: 200px;
 }
 
 .grid {
@@ -69,9 +71,9 @@ h1 {
 }
 
 .curso.completado {
-  background-color: #CDB4DB;
+  background-color: #CDB4DB !important;
   text-decoration: line-through;
-  color: #555;
+  color: #555 !important;
 }
 
 .curso:not(.bloqueado):not(.completado) {
@@ -85,13 +87,15 @@ h1 {
 
 .curso.electivo.bloqueado {
   background-color: #d8f3dc !important;
+  color: #000 !important;
 }
 
 .curso.electivo:not(.bloqueado):not(.completado) {
   background-color: #74c69d !important;
+  color: #000 !important;
 }
 
 .curso.electivo.completado {
   background-color: #4ea8de !important;
-  color: white;
+  color: white !important;
 }
