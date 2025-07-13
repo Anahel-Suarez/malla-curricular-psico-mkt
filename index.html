@@ -7,29 +7,31 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Malla Curricular Psicología y Marketing</h1>
+  <header>
+    <h1>Malla Curricular Interactiva</h1>
 
-  <div class="filtros">
-    <label for="tipo">Filtrar por tipo:</label>
-    <select id="filtro-tipo">
-      <option value="todos">Todos</option>
-      <option value="obligatorio">Obligatorios</option>
-      <option value="electivo">Electivos</option>
-    </select>
+    <div class="filtros">
+      <label for="filtro-mencion">Filtrar por mención:</label>
+      <select id="filtro-mencion" multiple>
+        <option value="psc: empresaria">PSC: EMPRESARIA</option>
+        <option value="psc-comunitaria">PSC-COMUNITARIA</option>
+        <option value="psc y nutrición">PSC Y NUTRICIÓN</option>
+        <option value="psc-educativa">PSC-EDUCATIVA</option>
+        <option value="psc-clini-salud">PSC-CLINI-SALUD</option>
+      </select>
 
-    <label for="mencion">Filtrar por mención (puedes elegir varias con Ctrl o Cmd):</label>
-    <select id="filtro-mencion" multiple size="6">
-      <option value="psc: empresaria">PSC: EMPRESARIA</option>
-      <option value="psc-comunitaria">PSC-COMUNITARIA</option>
-      <option value="psc y nutrición">PSC Y NUTRICIÓN</option>
-      <option value="psc-educativa">PSC-EDUCATIVA</option>
-      <option value="psc-clini-salud">PSC-CLINI-SALUD</option>
-    </select>
+      <label for="filtro-tipo">Filtrar por tipo:</label>
+      <select id="filtro-tipo">
+        <option value="todos">Todos</option>
+        <option value="obligatorio">Obligatorios</option>
+        <option value="electivo">Electivos</option>
+      </select>
 
-    <button id="reiniciar">Reiniciar progreso</button>
-  </div>
+      <button id="reiniciar">Reiniciar progreso</button>
+    </div>
+  </header>
 
-  <div id="malla" class="grid"></div>
+  <main id="malla"></main>
 
   <script src="script.js"></script>
 </body>
