@@ -50,11 +50,11 @@ function mostrarMalla() {
           (tipoFiltro === "electivo" && esElectivo);
 
         const visiblePorMencion =
-          esObligatorio ||
           mencionesSeleccionadas.length === 0 ||
+          esObligatorio ||
           (esElectivo && mencionesSeleccionadas.includes(mencion));
 
-        if (!visiblePorTipo || !visiblePorMencion) return;
+        if (!(visiblePorTipo && visiblePorMencion)) return;
 
         const div = document.createElement("div");
         div.className = "curso";
