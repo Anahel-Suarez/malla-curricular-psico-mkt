@@ -1,101 +1,47 @@
 body {
-  background-color: #ffffff;
-  font-family: Arial, sans-serif;
-  margin: 20px;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
 }
 
-h1 {
-  text-align: center;
-  color: #333;
-}
-
-.filtros {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  margin-bottom: 20px;
-}
-
-.filtros label {
-  font-weight: bold;
-}
-
-.filtros select,
-.filtros button {
-  padding: 0.5rem;
-  font-size: 1rem;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  background-color: #f9f9f9;
-  width: auto;
-  min-width: 150px;
-  max-width: 200px;
-}
-
-.grid {
-  display: flex;
-  flex-direction: row;
-  overflow-x: auto;
-  gap: 1rem;
+header {
   padding: 1rem;
+  background-color: #6200ee;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.malla-horizontal {
+  display: flex;
+  overflow-x: auto;
+  padding: 1rem;
+  gap: 1rem;
 }
 
 .ciclo {
+  flex: 0 0 auto;
   min-width: 200px;
   border: 1px solid #ccc;
-  border-radius: 10px;
-  padding: 1rem;
-  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 0.5rem;
+  background: white;
 }
 
 .ciclo h2 {
-  background-color: #A2D2FF;
   text-align: center;
-  padding: 0.5rem;
-  border-radius: 5px;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .curso {
-  margin: 5px 0;
-  padding: 8px;
-  border-radius: 5px;
-  background-color: #FFC8DD; /* bloqueado por defecto */
+  margin: 0.3rem 0;
+  padding: 0.5rem;
+  border-radius: 4px;
   cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.curso:hover {
-  transform: scale(1.03);
-}
-
-.curso.completado {
-  background-color: #CDB4DB !important;
-  text-decoration: line-through;
-  color: #555 !important;
-}
-
-.curso:not(.bloqueado):not(.completado) {
-  background-color: #FFAFCC; /* activo */
-}
-
-.curso.bloqueado {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
-.curso.electivo.bloqueado {
-  background-color: #d8f3dc !important;
-  color: #000 !important;
-}
-
-.curso.electivo:not(.bloqueado):not(.completado) {
-  background-color: #74c69d !important;
-  color: #000 !important;
-}
-
-.curso.electivo.completado {
-  background-color: #4ea8de !important;
-  color: white !important;
+  text-align: center;
+  font-size: 0.9rem;
+  border: 1px solid #ccc;
+  transition: background 0.3s;
 }
