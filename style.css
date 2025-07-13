@@ -1,17 +1,35 @@
 body {
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f9f9f9;
+  background: #f0f2f5;
 }
 
 header {
   padding: 1rem;
-  background-color: #6200ee;
+  background-color: #003049;
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+header h1 {
+  font-size: 1.2rem;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
+
+button#reiniciar {
+  background-color: #f77f00;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  position: absolute;
+  right: 1rem;
 }
 
 .malla-horizontal {
@@ -23,7 +41,7 @@ header {
 
 .ciclo {
   flex: 0 0 auto;
-  min-width: 200px;
+  width: 140px;
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 0.5rem;
@@ -33,15 +51,22 @@ header {
 .ciclo h2 {
   text-align: center;
   margin-bottom: 0.5rem;
+  font-size: 1rem;
 }
 
 .curso {
   margin: 0.3rem 0;
-  padding: 0.5rem;
+  padding: 0.4rem;
   border-radius: 4px;
   cursor: pointer;
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   border: 1px solid #ccc;
   transition: background 0.3s;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.curso.completado {
+  text-decoration: line-through;
 }
