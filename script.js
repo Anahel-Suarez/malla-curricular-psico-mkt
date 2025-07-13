@@ -4,12 +4,15 @@ fetch("cursos.json")
   .then(res => res.json())
   .then(data => {
     cursos = data;
+    console.log("Cursos cargados:", cursos);
     mostrarMalla();
   });
 
 function obtenerMencionesSeleccionadas() {
   const select = document.getElementById("filtro-mencion");
-  return Array.from(select?.selectedOptions || []).map(opt => opt.value.toLowerCase());
+  const menciones = Array.from(select?.selectedOptions || []).map(opt => opt.value.toLowerCase());
+  console.log("Menciones seleccionadas:", menciones);
+  return menciones;
 }
 
 function mostrarMalla() {
@@ -54,7 +57,10 @@ function mostrarMalla() {
           esObligatorio ||
           (esElectivo && mencionesSeleccionadas.includes(mencion));
 
-        if (!(visiblePorTipo && visiblePorMencion)) return;
+        const mostrar = visiblePorTipo && visiblePorMencion;
+        console.log(`Curso: ${curso.nombre}, tipo: ${tipo}, mencion: ${mencion}, mostrar: ${mostrar}`);
+
+        if (!mostrar) return;
 
         const div = document.createElement("div");
         div.className = "curso";
