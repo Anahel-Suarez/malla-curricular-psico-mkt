@@ -31,7 +31,8 @@ function mostrarMalla() {
       columna.appendChild(titulo);
 
       ciclos[ciclo].forEach(curso => {
-        const tipo = curso.condicion?.toLowerCase() || "";
+        const tipoRaw = curso.condicion?.toLowerCase() || "";
+        const tipo = tipoRaw.includes("elect") ? "electivo" : "obligatorio";
         const esElectivo = tipo === "electivo";
 
         const div = document.createElement("div");
@@ -78,7 +79,7 @@ function actualizarCursos() {
       curso.classList.add("bloqueado");
     }
 
-    // COLORES
+    // Aplicar color según tipo y estado
     if (tipo === "electivo") {
       curso.style.backgroundColor = estaCompletado
         ? "#4ea8de"
